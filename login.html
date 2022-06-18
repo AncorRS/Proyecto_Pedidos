@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/estilo.css"><!-- INVESTIGAR -->
+
+    <title>Document</title>
+<!--     <style>
+        .div1{
+    border-color: aquamarine;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#div2{
+    border-color: rgb(255, 127, 127);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.div3{
+    border-color: rgb(136, 127, 255);
+    border-style: solid;
+    border-width: 2px;
+}
+
+    </style> -->
+</head>
+
+
+<body>
+    
+    <h2>HTML Forms</h2>
+    
+    <!-- ///////////////////////////////////////FORMULARIO//////////////////////////////// -->
+    <form action="/recoge_form.js">
+
+        <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="nombre" value="Manuel"><br>
+      
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="apellido" value="Garcia"><br><br>
+      
+      <input type="submit" onclick="recoge_form()" value="ENVIAR" >
+      
+    </form> <br>
+    
+        <!-- ///////////////////////////////////////DIV//////////////////////////////// -->
+
+    <div id="div1">DIV
+        <img src="/img/1.png" alt="Girl in a jacket" width="80" height="60">
+        <img src="/img/1.png" alt="Girl in a jacket" width="80" height="60">
+        <img src="/img/1.png" alt="Girl in a jacket" width="80" height="60">
+    </div><br>
+
+    <div id="div2">
+        <img src="/img/2.png" alt="Girl in a jacket" width="80" height="60">
+        <img src="/img/2.png" alt="Girl in a jacket" width="80" height="60">
+        <img src="/img/2.png" alt="Girl in a jacket" width="80" height="60">
+    </div><br>
+
+    <div id="div3">
+        <img src="/img/3.png" alt="Girl in a jacket" width="80" height="60">
+        <img src="/img/3.png" alt="Girl in a jacket" width="80" height="60">
+        <img src="/img/3.png" alt="Girl in a jacket" width="80" height="60">
+    </div><br>
+    
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    <script src="recoge_form.js"></script>
+    
+</body>
+</html>
+
+
+<!--
+    section: Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section. 
+
+    article: Es un contenedor que representa contenido independiente,es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por si mismo.
+
+    aside: se utiliza para representar contenido relacionado pero no forma parte del contenido principal.
+
+    Anidamiento: 
+    Un section puede contener articles, por ejemplo, si tenemos varios artículos que hablan sobre etiquetas HTML, deben ir dentro de un section,ya que es contenido relacionado entre sí, ylos articles serían contenido independiente porque podriamos leer uno sin haber leído el resto, y seguiría teniendo sentido.
+    El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+    También existe el caso en el que un article contenga varios sections,el artículo independiente pordría ser navegadores y este contener dentro secciones como navegadores más utilizados en 2020.
+-->

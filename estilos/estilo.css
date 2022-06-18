@@ -1,0 +1,21 @@
+#div1{
+    border-color: aquamarine;
+    border-style: solid;
+}
+
+#div2{
+    border-color: rgb(255, 127, 127);
+    border-style: solid;
+}
+
+#div3{
+    border-color: rgb(136, 127, 255);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.div4{
+    border-color: rgb(136, 127, 255);
+    border-style: solid;
+}
+
